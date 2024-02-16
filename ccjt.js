@@ -11,7 +11,7 @@ let obj = JSON.parse($response.body);
 
 if ($request.url.includes("http://cc.lzjoy.com/?urlparam=common/user/GetVip") || $request.url.includes("http://cc.lzjoy.com/?urlparam=pad/opern/detail")) {
     obj.list.is_buy = "1";
-    obj.list.is_vip = "1021";
+    obj.list.is_vip = "4";
     obj.list.has_buy = "1";
     obj.list.expire_date = "1980401144";
     obj.list.vip_expire_date = "1980401144";
@@ -24,7 +24,7 @@ if ($request.url.includes("http://cc.lzjoy.com/?urlparam=common/user/GetVip") ||
     obj.list.vip_num = "3";
 } else if ($request.url.includes("http://cc.lzjoy.com/?urlparam=pad/course/getCourseDetailForSingleOpern")) {
     obj.list.is_buy = "1";
-    obj.list.is_vip = "1021";
+    obj.list.is_vip = "4";
     obj.list.has_buy = "1";
     obj.list.expire_date = "1980401144";
     obj.list.vip_expire_date = "1980401144";
