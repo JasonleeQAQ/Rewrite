@@ -21,7 +21,7 @@ if ($request.url.includes("http://cc.lzjoy.com/?urlparam=common/user/GetVip") ||
     obj.list.vip_will_expire = "1980401144";
     obj.list.is_lifelong_vip = "1";
     obj.list.expire_date_1 = "1980401144";
-    obj.list.vip_num = "3";
+    obj.list.vip_num = "1021";
 } else if ($request.url.includes("http://cc.lzjoy.com/?urlparam=pad/course/getCourseDetailForSingleOpern")) {
     obj.list.is_buy = "1";
     obj.list.is_vip = "1";
@@ -34,7 +34,7 @@ if ($request.url.includes("http://cc.lzjoy.com/?urlparam=common/user/GetVip") ||
     obj.list.vip_will_expire = "1980401144";
     obj.list.is_lifelong_vip = "1";
     obj.list.expire_date_1 = "1980401144";
-    obj.list.vip_num = "3";
+    obj.list.vip_num = "1021";
 }
 
 $done({ body: JSON.stringify(obj) });
