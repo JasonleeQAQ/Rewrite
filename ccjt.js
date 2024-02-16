@@ -10,31 +10,25 @@ http://cc.lzjoy.com url script-response-body https://raw.githubusercontent.com/J
 let obj = JSON.parse($response.body);
 
 if ($request.url.includes("http://cc.lzjoy.com/?urlparam=common/user/GetVip") || $request.url.includes("http://cc.lzjoy.com/?urlparam=pad/opern/detail")) {
+    obj.list.vip_will_expire_year = "1";
+    obj.list.svip_expire_date = "2049-02-23 22:44:50";
+    obj.list.vip_will_expire = "1";
+    obj.list.svip_create = "2024-02-16 22:44:50";
+    obj.list.vip_num = "1";
     obj.list.is_buy = "1";
+    obj.list.expire_date = "2049-02-23 22:44:50";
     obj.list.is_vip = "1";
-    obj.list.has_buy = "1";
-    obj.list.expire_date = "1980401144";
-    obj.list.vip_expire_date = "1980401144";
-    obj.list.vip_type = "1021";
-    obj.list.vip_will_expire_year = "100";
-    obj.list.svip_expire_date = "1980401144";
-    obj.list.vip_will_expire = "1980401144";
-    obj.list.is_lifelong_vip = "1";
-    obj.list.expire_date_1 = "1980401144";
-    obj.list.vip_num = "1021";
+    obj.list.expire_date_1 = "2049-02-23 22:44:50";
 } else if ($request.url.includes("http://cc.lzjoy.com/?urlparam=pad/course/getCourseDetailForSingleOpern")) {
+    obj.list.vip_will_expire_year = "1";
+    obj.list.svip_expire_date = "2049-02-23 22:44:50";
+    obj.list.vip_will_expire = "1";
+    obj.list.svip_create = "2024-02-16 22:44:50";
+    obj.list.vip_num = "1";
     obj.list.is_buy = "1";
+    obj.list.expire_date = "2049-02-23 22:44:50";
     obj.list.is_vip = "1";
-    obj.list.has_buy = "1";
-    obj.list.expire_date = "1980401144";
-    obj.list.vip_expire_date = "1980401144";
-    obj.list.vip_type = "1021";
-    obj.list.vip_will_expire_year = "99";
-    obj.list.svip_expire_date = "1980401144";
-    obj.list.vip_will_expire = "1980401144";
-    obj.list.is_lifelong_vip = "1";
-    obj.list.expire_date_1 = "1980401144";
-    obj.list.vip_num = "1021";
+    obj.list.expire_date_1 = "2049-02-23 22:44:50";
 }
 
 $done({ body: JSON.stringify(obj) });
