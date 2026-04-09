@@ -4,7 +4,7 @@
 #!category = 🔓 应用解锁
 
 [Script]
-小鹦看看 VIP = type=response,pattern=^https://buy\.itunes\.apple\.com/verifyReceipt,requires-body=1,max-size=0,script-path=pollykann.js
+小鹦看看 VIP = type=response,pattern=^https://buy\.itunes\.apple\.com/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JasonleeQAQ/Rewrite/refs/heads/main/itunes/pollykann.js
 
 [MITM]
 hostname = %APPEND% buy.itunes.apple.com
