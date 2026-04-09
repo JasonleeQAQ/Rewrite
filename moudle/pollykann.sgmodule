@@ -1,1 +1,10 @@
+#!name = 小鹦看看 VIP
+#!desc = 小鹦看看永久会员解锁
+#!author = Yu9191
+#!category = 🔓 应用解锁
 
+[Script]
+小鹦看看 VIP = type=response,pattern=^https://buy\.itunes\.apple\.com/verifyReceipt,requires-body=1,max-size=0,script-path=pollykann.js
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
